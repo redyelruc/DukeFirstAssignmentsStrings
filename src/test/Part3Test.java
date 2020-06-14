@@ -57,7 +57,15 @@ public class Part3Test {
     @Test
     public void testLastPartZOOinFORESTReturnsFOREST(){
         String stringC = "ZOO";
-        String banana = "FOREST";
-        Assert.assertEquals(part3.lastPart(stringC, banana), "FOREST");
+        String forest = "FOREST";
+        Assert.assertEquals(part3.lastPart(stringC, forest), "FOREST");
     }
+
+    @Test
+    public void testLastPartBRAinZEBRAReturnsEmptyString() {
+        String stringC = "BRA";
+        String zebra = "ZEBRA";
+        Assert.assertEquals(part3.lastPart(stringC, zebra), "");
+    }
+
 }
